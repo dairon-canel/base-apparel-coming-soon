@@ -18,9 +18,9 @@
 
     <script src="./index.js" defer></script>
   </head>
-  <body class="grid bg-darkGrayishRed">
+  <body class="grid min-h-screen overflow-hidden">
     <main
-      class="relative flex min-h-screen w-full flex-col items-center place-self-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:grid lg:max-w-[1440px] lg:columns-auto lg:grid-cols-[1fr_auto] lg:grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_auto_minmax(0,_1fr)]"
+      class="relative flex h-screen w-full flex-col items-center place-self-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:grid lg:max-w-[1440px] lg:columns-auto lg:grid-cols-[1fr_auto] lg:grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_auto_auto]"
     >
       <h1
         class="title-style lg z-10 order-3 mt-16 text-center font-600 uppercase text-darkGrayishRed lg:ml-[10.3rem] lg:mt-0 lg:w-80 lg:self-start lg:text-start lg:text-6xl lg:leading-[4.3rem]"
@@ -45,7 +45,11 @@
         <button
           class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-secondGradientTo lg:right-[4.5rem] lg:h-14 lg:w-[6rem]"
         >
-          <img class="place-self-center" src="./icon-arrow.svg" alt="" />
+          <img
+            class="h-[20px] w-[12px] place-self-center"
+            src="./icon-arrow.svg"
+            alt=""
+          />
         </button>
       </div>
       <picture
@@ -54,17 +58,17 @@
       /></picture>
 
       <picture
-        class="z-10 order-2 mb-1 self-start lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-5 lg:mt-0 lg:mb-0 lg:w-max"
+        class="z-10 order-2 mb-1 self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-5 lg:mt-0 lg:mb-0 lg:w-max lg:self-start"
       >
         <source srcset="./hero-desktop.jpg" media="(min-width:1024px)" />
         <img
-          class="h-full w-auto bg-cover object-cover lg:h-screen"
+          class="h-full w-auto bg-cover object-cover lg:max-h-min"
           src="./hero-mobile.jpg"
           alt="woman posing"
       /></picture>
 
       <picture
-        class="top-0 left-0 z-0 hidden h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:absolute lg:block"
+        class="top-0 left-0 z-0 hidden h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:absolute lg:block lg:max-w-[1440px]"
         ><img src="./bg-pattern-desktop.svg" alt="background pattern"
       /></picture>
     </main>
