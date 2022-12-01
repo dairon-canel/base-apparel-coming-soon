@@ -7,20 +7,14 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.81rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
 }
 
-.share-spacing {
-  letter-spacing: 0.3rem;
-}
-
-.grid {
-  display: grid;
-}
-
-.hidden {
-  display: none;
+.title-style {
+  letter-spacing: 0.5rem;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
 }
 
 .attribution {
