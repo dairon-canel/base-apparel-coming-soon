@@ -18,35 +18,54 @@
 
     <script src="./index.js" defer></script>
   </head>
-  <body
-    class="flex min-h-screen flex-col items-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo"
-  >
-    <h1
-      class="title-style order-3 mt-16 text-center font-600 uppercase text-darkGrayishRed"
+  <body class="grid bg-darkGrayishRed">
+    <main
+      class="relative flex min-h-screen w-full flex-col items-center place-self-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:grid lg:columns-auto lg:grid-cols-[auto_auto] lg:grid-rows-4"
     >
-      <span class="font-300 text-desaturatedRed">We're</span> coming soon
-    </h1>
-    <p class="order-4 mx-8 mt-4 mb-10 text-center text-sm text-desaturatedRed">
-      Hello fellow shoppers! We're currently building our new fashion store. Add
-      your email below to stay up-to-date with announcements and our launch
-      deals.
-    </p>
-    <div class="order-5 mx-8 mb-28 w-5/6 relative">
-    <input
-      placeholder="Email Address"
-      class=" placeholder:text-desaturatedRed w-full bg-firstGradientTo rounded-full border-2 border-desaturatedRed border-opacity-25 py-3 pl-6 text-sm placeholder:opacity-50"
-    >
-    </input>
-    <button class="absolute w-16 rounded-full shadow-secondGradientTo grid h-12 right-0 top-0  bg-gradient-to-br from-secondGradientFrom to-secondGradientTo"><img class="place-self-center" src="./icon-arrow.svg" alt=""></button>
-    </div>
-    <picture class="order-1 m-8 self-start"
-      ><img class="h-5 w-auto" src="./logo.svg" alt="logo"
-    /></picture>
-    <picture class="order-2 mb-1"
-      ><img src="./hero-mobile.jpg" alt="woman posing"
-    /></picture>
+      <h1
+        class="title-style z-10 order-3 mt-16 text-center font-600 uppercase text-darkGrayishRed"
+      >
+        <span class="font-300 text-desaturatedRed">We're</span> coming soon
+      </h1>
+      <p
+        class="z-10 order-4 mx-8 mt-4 mb-10 max-w-lg text-center text-sm text-desaturatedRed"
+      >
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <div class="relative z-10 order-5 mx-8 mb-28 w-5/6 max-w-lg">
+        <div
+          class="w-full rounded-full border-2 border-desaturatedRed border-opacity-25 bg-firstGradientTo py-3 pl-6 text-sm placeholder:text-desaturatedRed placeholder:opacity-50"
+        >
+          Email Address
+        </div>
+        <button
+          class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-secondGradientTo"
+        >
+          <img class="place-self-center" src="./icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <picture class="z-10 order-1 m-8 self-start"
+        ><img class="h-5 w-auto" src="./logo.svg" alt="logo"
+      /></picture>
 
-    <footer class="attribution">
+      <picture
+        class="z-10 order-2 mb-1 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-5 lg:mb-0 lg:w-max"
+      >
+        <source srcset="./hero-desktop.jpg" media="(min-width:1024px)" />
+        <img
+          class="h-full w-auto bg-cover object-cover lg:h-screen"
+          src="./hero-mobile.jpg"
+          alt="woman posing"
+      /></picture>
+
+      <picture
+        class="top-0 left-0 z-0 hidden h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:absolute lg:block"
+        ><img src="./bg-pattern-desktop.svg" alt="background pattern"
+      /></picture>
+    </main>
+    <footer class="attribution z-20">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
