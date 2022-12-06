@@ -18,9 +18,11 @@
 
     <script src="./index.js" defer></script>
   </head>
-  <body class="grid min-h-screen overflow-hidden">
+  <body
+    class="grid min-h-screen bg-gradient-to-b from-firstGradientFrom to-firstGradientTo"
+  >
     <main
-      class="relative grid h-screen w-full place-self-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:columns-auto lg:grid-cols-[1fr_auto] lg:grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_auto_auto]"
+      class="relative grid h-screen w-full place-self-center overflow-hidden lg:grid-cols-[1fr_auto] lg:grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_auto_auto] lg:content-start"
     >
       <h1
         class="title-style order-3 mt-16 text-center font-600 uppercase text-darkGrayishRed lg:ml-[10.3rem] lg:mt-0 lg:w-80 lg:self-start lg:text-start lg:text-6xl lg:leading-[4.3rem]"
@@ -56,19 +58,22 @@
       /></picture>
 
       <picture
-        class="order-2 mb-1 place-self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-5 lg:mt-0 lg:mb-0 lg:w-max lg:self-start"
+        class="lg:self-right order-2 mb-1 place-self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-6 lg:mt-0 lg:mb-0 lg:w-max lg:object-right"
       >
         <source srcset="./hero-desktop.jpg" media="(min-width:1024px)" />
         <img
-          class="h-full w-auto bg-cover object-cover object-right lg:max-h-min"
+          class="h-full w-auto bg-cover object-cover"
           src="./hero-mobile.jpg"
           alt="woman posing"
       /></picture>
+      <picture
+        class="absolute -z-10 h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo"
+        ><img
+          class="h-screen w-full object-cover"
+          src="./bg-pattern-desktop.svg"
+          alt="background pattern"
+      /></picture>
     </main>
-    <picture
-      class="top-0 left-0 hidden h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:absolute"
-      ><img src="./bg-pattern-desktop.svg" alt="background pattern"
-    /></picture>
     <footer class="attribution z-20">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
