@@ -20,28 +20,27 @@
   </head>
   <body class="grid min-h-screen overflow-hidden">
     <main
-      class="relative flex h-screen w-full flex-col items-center place-self-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:grid lg:columns-auto lg:grid-cols-[1fr_auto] lg:grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_auto_auto]"
+      class="relative grid h-screen w-full place-self-center bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:columns-auto lg:grid-cols-[1fr_auto] lg:grid-rows-[minmax(0,_1fr)_minmax(0,_1fr)_auto_auto]"
     >
       <h1
-        class="title-style lg z-10 order-3 mt-16 text-center font-600 uppercase text-darkGrayishRed lg:ml-[10.3rem] lg:mt-0 lg:w-80 lg:self-start lg:text-start lg:text-6xl lg:leading-[4.3rem]"
+        class="title-style order-3 mt-16 text-center font-600 uppercase text-darkGrayishRed lg:ml-[10.3rem] lg:mt-0 lg:w-80 lg:self-start lg:text-start lg:text-6xl lg:leading-[4.3rem]"
       >
         <span class="font-300 text-desaturatedRed">We're</span> coming soon
       </h1>
       <p
-        class="z-10 order-4 mx-8 mt-4 mb-10 max-w-lg text-center text-sm text-desaturatedRed lg:mb-8 lg:mt-0 lg:ml-[10.3rem] lg:w-[28rem] lg:self-start lg:text-left lg:text-base lg:leading-[1.7rem]"
+        class="order-4 mx-8 mt-4 mb-10 max-w-lg place-self-center text-center text-sm text-desaturatedRed lg:mb-8 lg:mt-0 lg:ml-[10.3rem] lg:w-[28rem] lg:place-self-start lg:text-left lg:text-base lg:leading-[1.7rem]"
       >
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-      <div
-        class="relative z-10 order-5 mx-8 mb-28 w-5/6 max-w-lg lg:ml-[10.3rem] lg:mt-2 lg:place-self-start"
+      <form
+        class="relative order-5 mx-8 mb-28 w-5/6 max-w-lg place-self-center lg:ml-[10.3rem] lg:mt-2 lg:place-self-start"
       >
-        <div
+        <input
           class="w-full rounded-full border-2 border-desaturatedRed border-opacity-50 bg-firstGradientTo py-3 pl-6 text-sm text-desaturatedRed opacity-50 lg:w-[27.5rem] lg:py-[1rem]"
-        >
-          Email Address
-        </div>
+          placeholder="Email Address"
+        />
         <button
           class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-secondGradientTo lg:right-[4.5rem] lg:h-14 lg:w-[6rem]"
         >
@@ -51,14 +50,13 @@
             alt=""
           />
         </button>
-      </div>
-      <picture
-        class="z-10 order-1 m-8 self-start lg:ml-[10.3rem] lg:mt-[4.3rem]"
+      </form>
+      <picture class="order-1 m-8 self-start lg:ml-[10.3rem] lg:mt-[4.3rem]"
         ><img class="h-5 w-auto lg:h-[33px]" src="./logo.svg" alt="logo"
       /></picture>
 
       <picture
-        class="z-10 order-2 mb-1 self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-5 lg:mt-0 lg:mb-0 lg:w-max lg:self-start"
+        class="order-2 mb-1 place-self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-5 lg:mt-0 lg:mb-0 lg:w-max lg:self-start"
       >
         <source srcset="./hero-desktop.jpg" media="(min-width:1024px)" />
         <img
@@ -68,7 +66,7 @@
       /></picture>
     </main>
     <picture
-      class="top-0 left-0 -z-10 hidden h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:absolute lg:block lg:max-w-[1440px]"
+      class="top-0 left-0 hidden h-screen w-full bg-darkGrayishRed bg-gradient-to-b from-firstGradientFrom to-firstGradientTo lg:absolute"
       ><img src="./bg-pattern-desktop.svg" alt="background pattern"
     /></picture>
     <footer class="attribution z-20">
