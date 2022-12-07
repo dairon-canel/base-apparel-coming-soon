@@ -38,16 +38,29 @@
       </p>
       <form
         class="relative order-5 mx-8 mb-28 w-5/6 max-w-lg place-self-center lg:ml-[10.3rem] lg:mt-2 lg:place-self-start"
+        id="email-form"
+        method="get"
+        action="./"
+        novalidate
       >
         <input
           class="w-full rounded-full border-2 border-desaturatedRed border-opacity-50 bg-firstGradientTo py-3 pl-6 text-sm placeholder:text-desaturatedRed placeholder:opacity-50 lg:w-[27.5rem] lg:py-[1rem]"
           placeholder="Email Address"
+          type="email"
+          id="mail"
+          name="mail"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          minlength="8"
+          value=""
         />
-        <span class="absolute left-0 top-16 pl-6 text-sm text-[#F96464]"
+        <span
+          id="feedback"
+          aria-live="polite"
+          class="absolute left-0 top-14 pl-6 text-sm text-[#F96464] lg:top-16"
           >Please provide a valid email</span
         >
         <svg
-          class="absolute lg:right-[11.5rem] lg:top-4"
+          class="absolute right-[5rem] top-3 lg:right-[11.5rem] lg:top-4"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -62,7 +75,7 @@
           </g>
         </svg>
         <button
-          class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-lg drop-shadow-lg transition-all hover:bg-gradient-to-br hover:from-secondGradientFrom hover:to-secondGradientFrom lg:right-[4.5rem] lg:h-14 lg:w-[6rem]"
+          class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-lg drop-shadow-lg transition-all hover:bg-gradient-to-r hover:from-secondGradientFrom hover:to-secondGradientFrom lg:right-[4.5rem] lg:h-14 lg:w-[6rem]"
         >
           <img
             class="h-[20px] w-[12px] place-self-center"

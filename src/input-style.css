@@ -17,6 +17,14 @@ body {
   line-height: 2.6rem;
 }
 
+.invalid-form {
+  border-color: #f96464;
+}
+
+.hidden {
+  display: none;
+}
+
 .attribution {
   position: fixed;
   width: 100vw;
