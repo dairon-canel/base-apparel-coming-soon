@@ -40,11 +40,29 @@
         class="relative order-5 mx-8 mb-28 w-5/6 max-w-lg place-self-center lg:ml-[10.3rem] lg:mt-2 lg:place-self-start"
       >
         <input
-          class="w-full rounded-full border-2 border-desaturatedRed border-opacity-50 bg-firstGradientTo py-3 pl-6 text-sm text-desaturatedRed opacity-50 lg:w-[27.5rem] lg:py-[1rem]"
+          class="w-full rounded-full border-2 border-desaturatedRed border-opacity-50 bg-firstGradientTo py-3 pl-6 text-sm placeholder:text-desaturatedRed placeholder:opacity-50 lg:w-[27.5rem] lg:py-[1rem]"
           placeholder="Email Address"
         />
+        <span class="absolute left-0 top-16 pl-6 text-sm text-[#F96464]"
+          >Please provide a valid email</span
+        >
+        <svg
+          class="absolute lg:right-[11.5rem] lg:top-4"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="12" cy="12" r="12" fill="#F96464" />
+            <path
+              fill="#FFF"
+              fill-rule="nonzero"
+              d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"
+            />
+          </g>
+        </svg>
         <button
-          class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-secondGradientTo lg:right-[4.5rem] lg:h-14 lg:w-[6rem]"
+          class="absolute right-0 top-0 grid h-12 w-16 rounded-full bg-gradient-to-br from-secondGradientFrom to-secondGradientTo shadow-lg drop-shadow-lg transition-all hover:bg-gradient-to-br hover:from-secondGradientFrom hover:to-secondGradientFrom lg:right-[4.5rem] lg:h-14 lg:w-[6rem]"
         >
           <img
             class="h-[20px] w-[12px] place-self-center"
